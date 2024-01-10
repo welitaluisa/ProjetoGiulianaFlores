@@ -1,0 +1,229 @@
+# Arquivos temporários gerados pela IDE
+.vscode/
+*.suo
+*.user
+*.suo
+*.user
+*.sdf
+*.opensdf
+*.mdf
+*.ldf
+
+# Logs e arquivos de exceção
+*.log
+*.log.*
+*.crash
+*.dmp
+
+# Arquivos de compilação e saída
+bin/
+obj/
+Debug/
+Release/
+*.exe
+*.dll
+*.pdb
+
+# Arquivos de configuração
+*.config
+*.config.user
+*.manifest
+*.settings
+
+# Arquivos de análise de código
+*.sln.docstates
+
+# Diretório de pacotes NuGet
+packages/
+
+# Dependências do .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Arquivos de usuário do Visual Studio
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.suo
+*.user
+*.suo
+*.user
+*.suo
+*.user
+*.suo
+*.user
+
+# Diretórios de saída específicos da plataforma
+[Tt]est[Rr]esult*/
+[Bb]in/
+[Ll]og/
+
+# Arquivos do Visual Studio Code
+.vscode/
+
+# Arquivos de compilação e publicação do Rider
+.idea/
+*.sln.iml
+*.iml
+*.suo
+*.user
+*.userosscache
+
+# Ferramentas Rider
+.idea/
+*.sln.iml
+*.iml
+*.suo
+*.user
+*.userosscache
+
+# Ferramentas Mono Auto Generated
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.iml
+*.suo
+*.user
+*.userosscache
+
+# Rider
+.idea/
+*.sln.iml
+*.iml
+*.suo
+*.user
+*.userosscache
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.iml
+*.suo
+*.user
+*.userosscache
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+
+# Rider
+.idea/
+*.sln.iml
+*.iml
+*.suo
+*.user
+*.userosscache
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
