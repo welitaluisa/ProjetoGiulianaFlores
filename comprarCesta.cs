@@ -63,7 +63,7 @@ public void AdicionaEExcluiuCestaNoCarrinho()
     // Clica no X para fechar o popup de busca de endereço 
     driver.FindElement(By.ClassName("close-button")).Click(); 
 
-    // validar que esta na seção Cestas
+    // valida que esta na seção Cestas
     Assert.That(driver.FindElement(By.Id("title-defaut")).Text, Is.EqualTo("CESTAS"));
 
     // Clica no link  Cestas de Aniversário
@@ -74,7 +74,7 @@ public void AdicionaEExcluiuCestaNoCarrinho()
    // Digita o CEP no campo
     driver.FindElement(By.Id("inputSearchAddress")).SendKeys("41601080");
 
-    // Aguarda até que a lista de endereços seja exibida (ajuste o tempo limite conforme necessário)
+    // Aguarda até que a lista de endereços seja exibida 
     wait.Until(d => driver.FindElement(By.CssSelector("#listAddressItems > ul > li")).Displayed);
 
     // Escolhe o endereço exibido exibido na lista
@@ -91,7 +91,7 @@ public void AdicionaEExcluiuCestaNoCarrinho()
     string cssSelectorListEspecial = $"#conteudo-produtos-filtro > div.content-dept.menu-hide > div.center-side > div:nth-child(2) > ul > li div a img[alt='{productNameListEspecial}']";
     driver.FindElement(By.CssSelector(cssSelectorListEspecial)).Click();
 
-    // Validar o botão Adicionar ao Carrinho
+    // Validar o texto do botão Adicionar ao Carrinho
     Assert.That(driver.FindElement(By.Id("ContentSite_lbtBuy")).Text, Is.EqualTo("ADICIONAR AO CARRINHO"));
 
     // Clique no botão Adicionar ao Carrinho
