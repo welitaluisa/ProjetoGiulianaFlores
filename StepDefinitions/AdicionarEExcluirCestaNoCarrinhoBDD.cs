@@ -25,7 +25,7 @@ namespace ProjetoGiulianaFloresBDD
             // Insttancia o objeto do Selenium como Chrome
             driver = new ChromeDriver(chromeOptions); 
             // Configura uma espera de 5 segundos para qualquer elemento aparecer
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(500000);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(10000);
             // Maxinize a janela do navegador
             driver.Manage().Window.Maximize();
         }
@@ -139,28 +139,22 @@ namespace ProjetoGiulianaFloresBDD
             driver.FindElement(By.Id("btConfirmShippingData")).Click();
         }
 
-        [Then(@"vejo os detalhes da Cesta ""(.*)""")]
-        public void ThenVejoOsDetalhesDaCesta(string txtDescricao)
-        {
-            Assert.That(driver.FindElement(By.CssSelector("#anchor-description > div > span:nth-child(2) > font > b:nth-child(1) > h2")).Text, Is.EqualTo(txtDescricao));
-        }
-
         [Then(@"vejo o nome ""(.*)"" da cesta")]
-        public void ThenVejoONomeDaCesta(string txtNameProduct)
+        public void ThenVejoONomeDaCesta(string NameProduct)
         {
-            Assert.That(driver.FindElement(By.Id("ContentSite_lblProductDsName")).Text, Is.EqualTo(txtNameProduct));
+            Assert.That(driver.FindElement(By.Id("ContentSite_lblProductDsName")).Text, Is.EqualTo(NameProduct));
         }
 
         [Then(@"vejo o preço ""(.*)"" da cesta")]
-        public void ThenVejoOPrecoDaCesta(string txtPrecoProduct)
+        public void ThenVejoOPrecoDaCesta(string PrecoProduct)
         {
-            Assert.That(driver.FindElement(By.CssSelector(".preco_prod > .precoPor_prod")).Text, Is.EqualTo(txtPrecoProduct));;
+            Assert.That(driver.FindElement(By.CssSelector(".preco_prod > .precoPor_prod")).Text, Is.EqualTo(PrecoProduct));;
         }
 
         [Then(@"Vejo o código ""(.*)"" da cesta")]
-        public void ThenVejoOCodigoDaCesta(string txtCodProduct)
+        public void ThenVejoOCodigoDaCesta(string CodProduct)
         {
-            Assert.That(driver.FindElement(By.Id("lblIdProduct")).Text, Is.EqualTo(txtCodProduct));
+            Assert.That(driver.FindElement(By.Id("lblIdProduct")).Text, Is.EqualTo(CodProduct));
         }
 
         [When(@"clico no botao em Adicionar ao carrinho")]

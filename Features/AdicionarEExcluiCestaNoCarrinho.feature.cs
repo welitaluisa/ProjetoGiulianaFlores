@@ -182,6 +182,103 @@ namespace ProjetoGiulianaFlores.Features
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Adicionar e Excluir Cesta no Carrinho DDT")]
+        [NUnit.Framework.TestCaseAttribute("69313530", "CESTA ESPECIAL DE ANIVERSÁRIO", "R$ 209,90", "Cód. Produto: 30106", null)]
+        [NUnit.Framework.TestCaseAttribute("57081783", "CAIXA DE VINHO E CHOCOLATE", "R$ 239,90", "Cód. Produto: rs-5287-15151", null)]
+        [NUnit.Framework.TestCaseAttribute("59631420", "CESTA DE CHOCOLATES DOÇURA", "R$ 399,90", "Cód. Produto: 26274", null)]
+        public void AdicionarEExcluirCestaNoCarrinhoDDT(string cep, string nameProduct, string precoProduct, string codProduct, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("cep", cep);
+            argumentsOfScenario.Add("NameProduct", nameProduct);
+            argumentsOfScenario.Add("PrecoProduct", precoProduct);
+            argumentsOfScenario.Add("CodProduct", codProduct);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar e Excluir Cesta no Carrinho DDT", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 42
+        this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 4
+    this.FeatureBackground();
+#line hidden
+#line 43
+        testRunner.When("clico na imagem Cestas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 44
+        testRunner.And(string.Format("digito o CEP \"{0}\"", cep), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 45
+        testRunner.And("aguardo a lista de endereço ser exibida", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 46
+        testRunner.And("escolho um endereço da lista", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 47
+        testRunner.And("clico no botão Aplicar do popup do CEP", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 48
+        testRunner.Then("valido o titulo \"CESTAS\" na pagina inicial", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 50
+        testRunner.When("clico na imagem Cestas de Aniversário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 51
+        testRunner.Then("valido o titulo \"CESTAS DE ANIVERSÁRIO\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 53
+        testRunner.When("clico na imagem Cesta Especial de Aniversário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 54
+        testRunner.And("vejo o texto do botão \"ADICIONAR AO CARRINHO\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 55
+        testRunner.And("clico no botão ADICIONAR AO CARRINHO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 56
+        testRunner.Then("vejo um popup \"SELECIONE A DATA E O PERÍODO DE ENTREGA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 58
+        testRunner.When("clico no radio referente a data da entrega", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 59
+        testRunner.And("clico no botão OK do popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 60
+        testRunner.Then(string.Format("vejo o nome \"{0}\" da cesta", nameProduct), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 61
+        testRunner.And(string.Format("vejo o preço \"{0}\" da cesta", precoProduct), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 62
+        testRunner.And(string.Format("Vejo o código \"{0}\" da cesta", codProduct), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 64
+        testRunner.When("clico no botao em Adicionar ao carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 65
+        testRunner.And("espero que a imagem do carrinho esteja visível", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 66
+        testRunner.Then("vejo o titulo do carrinho \"MEU CARRINHO\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 68
+        testRunner.When("clico no botão Excluir do carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 69
+        testRunner.Then("vejo que o carrinho está vazio \"0\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
