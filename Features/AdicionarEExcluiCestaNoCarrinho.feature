@@ -34,9 +34,7 @@ Feature: Adicionar e Excluir Cesta de Produto no Carrinho
         Then vejo o titulo do carrinho "MEU CARRINHO"
 
         When clico no botão Excluir do carrinho
-        Then vejo que o carrinho está vazio "0"
-
-    
+        Then vejo que o carrinho está vazio "0"   
 
         Scenario Outline: Adicionar e Excluir Cesta no Carrinho DDT
         When clico na imagem Cestas
