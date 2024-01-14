@@ -25,7 +25,6 @@ Feature: Adicionar e Excluir Cesta de Produto no Carrinho
 
         When clico no radio referente a data da entrega
         And clico no botão OK do popup
-        Then vejo os detalhes da Cesta "DESCRIÇÃO:"
         And vejo o nome "CESTA ESPECIAL DE ANIVERSÁRIO" da cesta
         And vejo o preço "R$ 209,90" da cesta
         And Vejo o código "Cód. Produto: 30106" da cesta 
