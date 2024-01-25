@@ -1,4 +1,4 @@
-## Projeto GiulianaFlores
+# Projeto GiulianaFlores
 
 Este projeto é o terceiro desafio do curso de formação em Teste de Software turma 139 da Iterasys.
 O Desafio consiste em criar um projeto de automação Web usando C# e SpecFlow.
